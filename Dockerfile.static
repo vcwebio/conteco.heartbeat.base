@@ -17,7 +17,7 @@ RUN chmod -R 555 /conteco
 ##### END image/Dockerfile/conteco #####
 
 ##### BEGIN image/Dockerfile/build-instructions #####
-ENV CONTECO_ENTRYPOINT "/usr/local/bin/docker-entrypoint"
+ENV CONTECO_ENTRYPOINT "/conteco/bin/heartbeat/base/docker-entrypoint"
 COPY ./conteco/configs/usr/share/heartbeat/heartbeat.yml /usr/share/heartbeat/heartbeat.yml
 USER heartbeat
 ##### END image/Dockerfile/build-instructions #####

@@ -15,7 +15,7 @@ export CONTECO_DC_GLOBAL_SERVICE_NAME="${CONTECO_TYPE}"
 export CONTECO_DC_GLOBAL_IMAGE_NAME="${CONTECO_TYPE}.${CONTECO_NAME}:${CONTECO_TAG}"
 export CONTECO_DC_HEARTBEAT_VOLUMES="'/etc:/hostfs/etc:ro','${DOLLAR}{CONTECO_STACKPREFIX}_heartbeat_data_volume:/usr/share/heartbeat/data','${DOLLAR}{CONTECO_STACKPREFIX}_heartbeat_monitors_volume:/usr/share/heartbeat/monitors.d'"
 export CONTECO_DC_HEARTBEAT_NETWORKS="${DOLLAR}{CONTECO_NETWORKLOCAL}_overlay"
-export CONTECO_DC_GLOBAL_VOLUMES="${DOLLAR}{CONTECO_STACKPREFIX}_heartbeat_volume: { external: true }"
+export CONTECO_DC_GLOBAL_VOLUMES="${DOLLAR}{CONTECO_STACKPREFIX}_heartbeat_data_volume: { external: true }, ${DOLLAR}{CONTECO_STACKPREFIX}_heartbeat_monitors_volume: { external: true }"
 export CONTECO_DC_GLOBAL_NETWORKS="${DOLLAR}{CONTECO_NETWORKLOCAL}_overlay: { external: true }"
 # END GLOBAL SETTINGS
 
