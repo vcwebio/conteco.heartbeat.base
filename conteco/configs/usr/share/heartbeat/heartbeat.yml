@@ -7,7 +7,7 @@ heartbeat.config.monitors:
   # How often to check for changes
   reload.period: 1m
 
-logging.level: warning
+logging.level: ${ES_HEARTBEAT_LOGGING_LEVEL:warning}
 
 output.console:
   enabled: true
