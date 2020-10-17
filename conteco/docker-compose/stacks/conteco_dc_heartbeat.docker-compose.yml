@@ -4,7 +4,7 @@ services:
 
 # START SERVICE heartbeat.base
   heartbeat:
-    image: ${CONTECO_REGISTRY}${CONTECO_REALM_RUNTIME}/conteco.heartbeat.base:7.8.0
+    image: ${CONTECO_REGISTRY}${CONTECO_REALM_RUNTIME}/conteco.heartbeat.base:7.9.2
     environment: ['ES_HEARTBEAT_LOGGING_LEVEL=${CONTECO_DC_HEARTBEAT_ENVIRONMENT_LOGGING_LEVEL}']
     command: []
     volumes: ['/etc:/hostfs/etc:ro','${CONTECO_STACKPREFIX}_heartbeat_data_volume:/usr/share/heartbeat/data','${CONTECO_STACKPREFIX}_heartbeat_monitors_volume:/usr/share/heartbeat/monitors.d']

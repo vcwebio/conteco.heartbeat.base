@@ -5,7 +5,7 @@ export CONTECO_DESCRIPTION="The ElasticSearch HeartBeat base image."
 
 export CONTECO_TYPE="heartbeat"
 export CONTECO_NAME="base"
-export CONTECO_TAG="7.8.0"
+export CONTECO_TAG="7.9.2"
 
-export CONTECO_BASE="external.heartbeat:7.8.0"
+export CONTECO_BASE="external.heartbeat:7.9.2"
 export CONTECO_BUILD="image-base"
